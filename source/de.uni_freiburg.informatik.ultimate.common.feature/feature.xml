@@ -318,4 +318,12 @@ This Agreement is governed by the laws of the State of New York and the intellec
          id="org.apache.commons.lang"
          version="0.0.0"/>
 
+   <plugin
+         id="org.apache.logging.log4j.api"
+         version="0.0.0"/>
+
+   <plugin
+         id="net.sourceforge.czt"
+         version="0.0.0"/>
+
 </feature>
