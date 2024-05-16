@@ -15,6 +15,10 @@
 	<description>Parent POM for Ultimate Project</description>
 
 	<modules>
+		<!-- third party libraries that are not in nexus -->
+		<module>../net.sf.javabdd</module>
+		<module>../net.sourceforge.czt</module>
+		
 		<module>../de.uni_freiburg.informatik.ultimate.target</module>
 		<module>../de.uni_freiburg.informatik.ultimate.deps.feature</module>
 		<module>../de.uni_freiburg.informatik.ultimate.common.feature</module>
