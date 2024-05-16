@@ -23,10 +23,9 @@
 		<location includeDependencyDepth="none" includeDependencyScopes="compile" includeSource="true" missingManifest="generate" type="Maven">
 			<dependencies>
 				<dependency>
-					<groupId>com.thaiopensource</groupId>
-					<artifactId>jing</artifactId>
-					<version>20091111</version>
-					<type>jar</type>
+  					<groupId>org.ojalgo</groupId>
+				    <artifactId>ojalgo</artifactId>
+  					<version>53.3.0</version>
 				</dependency>
 			</dependencies>
 		</location>
