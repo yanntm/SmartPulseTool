@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <description name="SmartPulse update site" url="https://github.com/yanntm/SmartPulseTool">
+      SmartPulse Update Site
+   </description>
+   <feature id="de.uni_freiburg.informatik.ultimate.deps.feature">
+      <category name="de.uni_freiburg.informatik.ultimate.category.smartpulse"/>
+   </feature>
+   <category-def name="de.uni_freiburg.informatik.ultimate.category.smartpulse" label="SmartPulse tool">
+      <description>
+         Everything you need to run SmartPulse
+      </description>
+   </category-def>
+</site>
