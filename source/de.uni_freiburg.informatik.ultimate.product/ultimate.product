@@ -32,12 +32,10 @@
    </plugins>
 
    <features>
-      <feature id="BA_FeatureUltimateCommandLine" installMode="root"/>
-      <feature id="BA_FeatureUltimateCommon" installMode="root"/>
+      <feature id="de.uni_freiburg.informatik.ultimate.common.feature" installMode="root"/>
    </features>
 
    <configurations>
-      <plugin id="org.apache.felix.scr" autoStart="true" startLevel="1" />
       <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
    </configurations>
 
