@@ -3,15 +3,13 @@
 <target name="de.uni_freiburg.informatik.ultimate.target">
 	<locations>
 		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-			<repository location="https://download.eclipse.org/releases/2024-03" />
-			<unit id="org.eclipse.jdt.feature.group"
-				version="3.19.400.v20240229-0520" />
+			<repository location="https://download.eclipse.org/releases/2024-03"/>
+			<unit id="org.eclipse.jdt.feature.group" version="3.19.400.v20240229-0520"/>
 		</location>
 		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-			<repository
-				location="https://download.eclipse.org/tools/orbit/simrel/orbit-aggregation/2024-03/" />
-			<unit id="org.eclipse.orbit.maven.osgi.all.source.feature.group"
-				version="4.31.0.v20240227-0900" />
+			<repository location="https://download.eclipse.org/tools/orbit/simrel/orbit-aggregation/2024-03/"/>
+			<unit id="org.eclipse.orbit.maven.osgi.all.source.feature.group" version="4.31.0.v20240227-0900"/>
+			<unit id="org.eclipse.orbit.maven.xerces.feature.group" version="4.31.0"/>
 		</location>
 		<location includeDependencyDepth="none" includeDependencyScopes="compile" includeSource="true" missingManifest="generate" type="Maven">
 			<dependencies>
@@ -23,25 +21,23 @@
 				</dependency>
 			</dependencies>
 		</location>
-		<location includeDependencyDepth="none"
-			includeDependencyScopes="compile" includeSource="true"
-			missingManifest="generate" type="Maven">
+		<location includeDependencyDepth="none" includeDependencyScopes="compile" includeSource="true" missingManifest="generate" type="Maven">
 			<dependencies>
 				<dependency>
 					<groupId>org.jdom</groupId>
 					<artifactId>jdom</artifactId>
 					<version>2.0.2</version>
+					<type>jar</type>
 				</dependency>
 			</dependencies>
 		</location>
-		
-		
 		<location includeDependencyDepth="none" includeDependencyScopes="compile" includeSource="true" missingManifest="generate" type="Maven">
 			<dependencies>
 				<dependency>
-  					<groupId>org.ojalgo</groupId>
-				    <artifactId>ojalgo</artifactId>
-  					<version>53.3.0</version>
+					<groupId>org.ojalgo</groupId>
+					<artifactId>ojalgo</artifactId>
+					<version>53.3.0</version>
+					<type>jar</type>
 				</dependency>
 			</dependencies>
 		</location>
