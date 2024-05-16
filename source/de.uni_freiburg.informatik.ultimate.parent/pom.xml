@@ -17,6 +17,7 @@
 	<modules>
 		<module>../de.uni_freiburg.informatik.ultimate.target</module>
 		<module>../de.uni_freiburg.informatik.ultimate.deps.feature</module>
+		<module>../de.uni_freiburg.informatik.ultimate.common.feature</module>
 		<module>../de.uni_freiburg.informatik.ultimate.updatesite</module>
 		<module>../de.uni_freiburg.informatik.ultimate.product</module>
 	</modules>
