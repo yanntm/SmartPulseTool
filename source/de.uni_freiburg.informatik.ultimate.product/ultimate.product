@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="de.uni_freiburg.informatik.ultimate.product" uid="de.uni_freiburg.informatik.ultimate.product" id="de.uni_freiburg.informatik.ultimate.product" application="de.uni_freiburg.informatik.ultimate.core.CoreRCP" version="1.0.0.qualifier" type="features" includeLaunchers="true" autoIncludeRequirements="true">
+
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <vmArgs>-Xss128m -Xms40m -Xmx16384m
+      </vmArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
+      </vmArgsMac>
+   </launcherArgs>
+
+   <windowImages/>
+
+
+   <launcher name="SmartPulse">
+      <win useIco="false">
+         <bmp/>
+      </win>
+   </launcher>
+
+
+   <vm>
+   </vm>
+
+
+   <plugins>
+   </plugins>
+
+   <features>
+      <feature id="BA_FeatureUltimateCommandLine" installMode="root"/>
+      <feature id="BA_FeatureUltimateCommon" installMode="root"/>
+   </features>
+
+   <configurations>
+      <plugin id="org.apache.felix.scr" autoStart="true" startLevel="1" />
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
+   </configurations>
+
+   <preferencesInfo>
+      <targetfile overwrite="false"/>
+   </preferencesInfo>
+
+   <cssInfo>
+   </cssInfo>
+
+</product>
