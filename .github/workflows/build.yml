@@ -1,0 +1,59 @@
+name: Java CI with Maven
+
+on: 
+ push:
+   branches: [ master ]
+ repository_dispatch:
+   types: [rebuild]
+
+jobs:
+  build:
+    name: Maven
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: 17
+        distribution: 'temurin'
+    - name: Setup Maven
+      uses: stCarolas/setup-maven@v5
+      with:
+        maven-version: 3.9.6
+    - name: Build with Maven
+      run: cd source/de.uni_freiburg.informatik.ultimate.parent && mvn -B -e install && cd -
+    - name: copy update site to website
+      run: cp -r source/de.uni_freiburg.informatik.ultimate.updatesite/target/repository/* website/ ; ls website/
+    - name: Copy scripts
+      run: cp source/de.uni_freiburg.informatik.ultimate.product/target/products/*.zip website/ ; ls website/
+    - name: Prepare website directory
+      run: mkdir -p website/temp
+    - name: Copy zip files to website
+      run: |
+           mkdir -p website
+           cp source/de.uni_freiburg.informatik.ultimate.product/target/products/*.zip website/
+    - name: Convert tar.gz to zip and move to website
+      run: |
+        mkdir -p temp
+        for file in source/de.uni_freiburg.informatik.ultimate.product/target/products/*.tar.gz; do
+          # Extract the tar.gz file to a temporary directory
+          tar -zxvf "$file" -C temp
+          # Get the base name of the file
+          base_name=$(basename "$file" .tar.gz)
+          # Create a zip file with the same base name in the website directory
+          (cd temp && zip -r "../website/${base_name}.zip" .)
+          # Clean up the contents of the temporary directory
+          rm -rf temp/*
+        done
+        # Remove the temporary directory
+        rm -rf temp
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@v4.5.0
+      with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: website/ # The folder the action should deploy.
+          clean: true # Automatically remove deleted files from the deploy branch
+          single-commit: true  
