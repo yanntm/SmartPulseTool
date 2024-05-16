@@ -15,7 +15,7 @@
 	<description>Parent POM for Ultimate Project</description>
 
 	<modules>
-		<!-- List of submodules will be added here -->
+		<module>../de.uni_freiburg.informatik.ultimate.deps.feature</module>
 	</modules>
 
 	<properties>
