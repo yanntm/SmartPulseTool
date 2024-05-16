@@ -310,4 +310,12 @@ This Agreement is governed by the laws of the State of New York and the intellec
          id="org.apache.xerces"
          version="0.0.0"/>
 
+   <plugin
+         id="org.apache.log4j"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.apache.commons.lang"
+         version="0.0.0"/>
+
 </feature>
