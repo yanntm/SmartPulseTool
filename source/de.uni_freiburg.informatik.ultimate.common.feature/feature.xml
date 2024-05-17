@@ -306,4 +306,20 @@ This Agreement is governed by the laws of the State of New York and the intellec
          id="org.eclipse.core.runtime"
          version="0.0.0"/>
 
+   <plugin
+         id="de.uni_freiburg.informatik.ultimate.lib.ultimatemodel"
+         version="0.0.0"/>
+
+   <plugin
+         id="de.uni_freiburg.informatik.ultimate.lib.core"
+         version="0.0.0"/>
+
+   <plugin
+         id="de.uni_freiburg.informatik.ultimate.lib.smtlib"
+         version="0.0.0"/>
+
+   <plugin
+         id="de.uni_freiburg.informatik.ultimate.lib.util"
+         version="0.0.0"/>
+
 </feature>
