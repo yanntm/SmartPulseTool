@@ -20,6 +20,10 @@
 		<module>../net.sourceforge.czt</module>
 		
 		<module>../de.uni_freiburg.informatik.ultimate.lib.ultimatemodel</module>
+		<module>../de.uni_freiburg.informatik.ultimate.lib.util</module>
+		<module>../de.uni_freiburg.informatik.ultimate.lib.smtlib</module>
+		<module>../de.uni_freiburg.informatik.ultimate.lib.core</module>
+		
 		
 		
 		<module>../de.uni_freiburg.informatik.ultimate.target</module>
@@ -36,7 +40,7 @@
 		<tycho-version>4.0.4</tycho-version>
 		<maven.compiler.source>17</maven.compiler.source>
 		<maven.compiler.target>17</maven.compiler.target>
-		<jaxb2-maven-plugin.version>2.5.0</jaxb2-maven-plugin.version>
+		<jaxb2-maven-plugin.version>3.2.0</jaxb2-maven-plugin.version>
 	</properties>
 
 	<build>
