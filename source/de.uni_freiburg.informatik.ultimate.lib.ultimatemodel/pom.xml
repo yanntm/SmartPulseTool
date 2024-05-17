@@ -29,15 +29,13 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<artifactId>mavenparent</artifactId>
+		<artifactId>de.uni_freiburg.informatik.ultimate.parent</artifactId>
 		<groupId>de.uni_freiburg.informatik.ultimate</groupId>
-		<version>0.1.24</version>
-		<relativePath>../BA_MavenParentUltimate/pom.xml</relativePath>
+		<version>1.0.0-SNAPSHOT</version>
+		<relativePath>../de.uni_freiburg.informatik.ultimate.parent/pom.xml</relativePath>
 	</parent>
 
-	<groupId>de.uni_freiburg.informatik.ultimate</groupId>
 	<artifactId>de.uni_freiburg.informatik.ultimate.lib.ultimatemodel</artifactId>
-	<version>0.1.24</version>
 	<packaging>eclipse-plugin</packaging>
 
 </project>

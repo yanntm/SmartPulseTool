@@ -19,6 +19,9 @@
 		<module>../net.sf.javabdd</module>
 		<module>../net.sourceforge.czt</module>
 		
+		<module>../de.uni_freiburg.informatik.ultimate.lib.ultimatemodel</module>
+		
+		
 		<module>../de.uni_freiburg.informatik.ultimate.target</module>
 		<module>../de.uni_freiburg.informatik.ultimate.deps.feature</module>
 		<module>../de.uni_freiburg.informatik.ultimate.common.feature</module>
@@ -33,6 +36,7 @@
 		<tycho-version>4.0.4</tycho-version>
 		<maven.compiler.source>17</maven.compiler.source>
 		<maven.compiler.target>17</maven.compiler.target>
+		<jaxb2-maven-plugin.version>2.5.0</jaxb2-maven-plugin.version>
 	</properties>
 
 	<build>
