@@ -43,11 +43,10 @@
                         </goals>
                         <phase>generate-sources</phase>
                         <configuration>
-                            <schemaDirectory>src/main/resources/schemas</schemaDirectory>
                             <schemaIncludes>
                                 <include>toolchain.xsd</include>
                             </schemaIncludes>
-                            <outputDirectory>${project.build.directory}/src-gen</outputDirectory>
+                            <outputDirectory>src-gen</outputDirectory>
                             <packageName>de.uni_freiburg.informatik.ultimate.core.lib.toolchain</packageName>
                         </configuration>
                     </execution>

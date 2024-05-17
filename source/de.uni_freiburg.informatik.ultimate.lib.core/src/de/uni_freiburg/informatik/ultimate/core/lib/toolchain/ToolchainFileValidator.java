@@ -36,11 +36,11 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 import javax.xml.XMLConstants;
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBElement;
-import javax.xml.bind.JAXBException;
-import javax.xml.bind.Marshaller;
-import javax.xml.bind.Unmarshaller;
+import jakarta.xml.bind.JAXBContext;
+import jakarta.xml.bind.JAXBElement;
+import jakarta.xml.bind.JAXBException;
+import jakarta.xml.bind.Marshaller;
+import jakarta.xml.bind.Unmarshaller;
 import javax.xml.validation.SchemaFactory;
 
 import org.xml.sax.SAXException;
@@ -77,7 +77,7 @@ public class ToolchainFileValidator {
 	@SuppressWarnings({ "unchecked" })
 	public RunDefinition loadValidatedToolchain(final String xmlfile)
 			throws JAXBException, FileNotFoundException, SAXException {
-		final JAXBContext jc = JAXBContext.newInstance(TOOLCHAIN_PACKAGE);
+		final JAXBContext jc = JAXBContext.newInstance(TOOLCHAIN_PACKAGE, getClass().getClassLoader());
 		final Unmarshaller unmarshaller = jc.createUnmarshaller();
 		final URL fullPathString = getClass().getResource(TOOLCHAIN_URI);
 		unmarshaller.setSchema(SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI).newSchema(fullPathString));

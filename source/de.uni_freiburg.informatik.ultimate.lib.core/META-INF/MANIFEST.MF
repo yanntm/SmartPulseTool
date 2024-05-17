@@ -15,4 +15,6 @@ Export-Package: de.uni_freiburg.informatik.ultimate.core.lib.exceptions,
  de.uni_freiburg.informatik.ultimate.core.lib.util
 Require-Bundle: de.uni_freiburg.informatik.ultimate.lib.ultimatemodel;visibility:=reexport,
  de.uni_freiburg.informatik.ultimate.lib.util,
- de.uni_freiburg.informatik.ultimate.lib.smtlib
+ de.uni_freiburg.informatik.ultimate.lib.smtlib,
+ com.sun.xml.bind.jaxb-impl,
+ jakarta.xml.bind-api;bundle-version="4.0.1"
