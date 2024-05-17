@@ -12,3 +12,5 @@ Export-Package: de.uni_freiburg.informatik.ultimate.core.model,
  de.uni_freiburg.informatik.ultimate.core.model.results,
  de.uni_freiburg.informatik.ultimate.core.model.services,
  de.uni_freiburg.informatik.ultimate.core.model.translation
+Require-Bundle: jakarta.xml.bind-api;bundle-version="4.0.1",
+ com.sun.xml.bind.jaxb-impl;bundle-version="4.0.4"
